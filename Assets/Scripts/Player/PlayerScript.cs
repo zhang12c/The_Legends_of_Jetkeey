@@ -8,18 +8,22 @@ namespace Player
         private float _inputX;
         private float _inputY;
         private bool _turnLeft;
+        private bool _isMoving;
+
         private Rigidbody2D _rigidbody2D;
+        private Animator _animator;
+
         // xy 合成的一个向量，人物朝向
         private Vector2 _movementInput;
         public float moveSpeed;
-        private Animator _animator;
-        private bool _isMoving;
         
         
         private static readonly int IsMoving = Animator.StringToHash("isMoving");
         private static readonly int InputX = Animator.StringToHash("inputX");
         private static readonly int InputY = Animator.StringToHash("inputY");
         private static readonly int TurnLeft = Animator.StringToHash("turnLeft");
+        private static readonly int Atk = Animator.StringToHash("atk");
+        private bool _inputDisable;
 
         private void Awake()
         {
@@ -28,16 +32,27 @@ namespace Player
         }
         private void Update()
         {
-            MovementInput();
+            if (!_inputDisable)
+            {
+                PlayerInput();
+            }
+            else
+            {
+                // 不可输入的时候就不要跑步了
+                _isMoving = false;
+            }
+            SwitchAnimator();
         }
         
         private void FixedUpdate()
         {
-            Movement();
-            SwitchAnimator();
+            if (!_inputDisable)
+            {
+                Movement();
+            }
         }
 
-        private void MovementInput()
+        private void PlayerInput()
         {
             _inputX = Input.GetAxis("Horizontal");
             _inputY = Input.GetAxis("Vertical");
@@ -52,6 +67,12 @@ namespace Player
             if (_inputX != 0)
             {
                 _turnLeft = _inputX < 0;
+            }
+
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                _animator.SetTrigger(Atk);
+                _inputDisable = false;
             }
             
         }
