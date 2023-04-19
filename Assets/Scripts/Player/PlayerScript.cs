@@ -43,22 +43,17 @@ namespace Player
             _inputY = Input.GetAxis("Vertical");
             
             // 按下shift 的时候慢走
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                _inputX *= 0.7f;
-            }
-            else
-            {
+            if (!Input.GetKey(KeyCode.LeftShift))
                 _inputX *= 0.5f;
-            }
             
             _movementInput = new Vector2(_inputX, 0);
-            _isMoving = _movementInput != Vector2.zero || _inputY < 0;
+            _isMoving = _movementInput != Vector2.zero;
             
             if (_inputX != 0)
             {
                 _turnLeft = _inputX < 0;
             }
+            
         }
         private void Movement()
         {
