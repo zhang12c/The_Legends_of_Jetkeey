@@ -42,7 +42,34 @@
   </PropertyGroup>
   <ItemGroup>
      <Folder Include="Assets" />
+     <Folder Include="Assets/ART/generic_char_v0.2/png" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Idle" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee" />
+     <Folder Include="Assets/ART/generic_char_v0.2" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Snail" />
      <Folder Include="Assets/Scenes" />
+     <Folder Include="Assets/Scripts" />
+     <Folder Include="Assets/ART/generic_char_v0.2/png/purple" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Hit" />
+     <Folder Include="Assets/TileMap" />
+     <Folder Include="Assets/ART/generic_char_v0.2/png/blue" />
+     <Folder Include="Assets/Animation" />
+     <Folder Include="Assets/ART/generic_char_v0.2/png/red" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Run" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Hit-Vanish" />
+     <Folder Include="Assets/ART" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Background" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Attack" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/HUD" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Trees" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Walk" />
+     <Folder Include="Assets/ART/generic_char_v0.2/png/green" />
+     <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Assets" />
+     <Folder Include="Assets/Animator" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.20f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>

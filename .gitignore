@@ -1,1 +1,6 @@
 /.idea/.idea.The Legends of Jetkeey/.idea/.gitignore
+/Library/
+/Logs/
+/obj/
+/UserSettings/
+/Temp/
