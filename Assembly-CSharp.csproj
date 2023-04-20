@@ -41,11 +41,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/UnitTool/PhysicsCheckLayer.cs" />
+     <Compile Include="Assets/Scripts/Entity/Character.cs" />
+     <Compile Include="Assets/Scripts/Entity/Enemy/BaseEnemy.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/Attack.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/PlayerController.cs" />
-     <Compile Include="Assets/Scripts/Entity/Character.cs" />
      <Compile Include="Assets/Scripts/Entity/Enemy/Pig.cs" />
-     <Compile Include="Assets/Scripts/Entity/Enemy/BaseEnemy.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/TileMap/TileData/TreeBG" />
      <Folder Include="Assets/ART/generic_char_v0.2/png" />
@@ -75,6 +76,7 @@
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Hit-Vanish" />
      <Folder Include="Assets/ART" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Background" />
+     <Folder Include="Assets/Animation/Enemy" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Attack" />
      <Folder Include="Assets/Prefab/Moster" />
      <Folder Include="Assets/TileMap/TileData" />
@@ -84,6 +86,7 @@
      <Folder Include="Assets/Prefab/Player" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Trees" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob" />
+     <Folder Include="Assets/Scripts/UnitTool" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Walk" />
      <Folder Include="Assets/TileMap/RuleTile" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/green" />

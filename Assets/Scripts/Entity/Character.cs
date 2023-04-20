@@ -11,7 +11,8 @@ namespace Entity
         public float maxHealth;
         public float currentHealth;
 
-        public UnityEvent OnTakeDamage;
+        public UnityEvent<Transform> OnTakeDamage;
+        public UnityEvent OnDie;
 
         [Header("受伤无敌")]
         // 被打击的时候有一小段无敌时间
@@ -52,14 +53,14 @@ namespace Entity
                 currentHealth -= attacker.damage;
                 Debug.Log("执行受伤-" + attacker.damage);
                 //执行受伤
-                OnTakeDamage?.Invoke();
+                OnTakeDamage?.Invoke(attacker.transform.parent);
                 TriggerInvulnerable();
             }
             else
             {
                 currentHealth = 0;
                 //触发死亡
-                //OnDie?.Invoke();
+                OnDie?.Invoke();
             }
             
         }
