@@ -41,7 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/Player/PlayerScript.cs" />
+     <Compile Include="Assets/Scripts/Entity/Player/Attack.cs" />
+     <Compile Include="Assets/Scripts/Entity/Player/PlayerController.cs" />
+     <Compile Include="Assets/Scripts/Entity/Character.cs" />
+     <Compile Include="Assets/Scripts/Entity/Enemy/Pig.cs" />
+     <Compile Include="Assets/Scripts/Entity/Enemy/BaseEnemy.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/TileMap/TileData/TreeBG" />
      <Folder Include="Assets/ART/generic_char_v0.2/png" />
@@ -50,7 +54,7 @@
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Idle" />
      <Folder Include="Assets/TileMap/TileData/MapTileclip" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee" />
-     <Folder Include="Assets/Scripts/Player" />
+     <Folder Include="Assets/Scripts/Entity/Player" />
      <Folder Include="Assets/ART/generic_char_v0.2" />
      <Folder Include="Assets/Prefab" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Snail" />
@@ -67,6 +71,7 @@
      <Folder Include="Assets/ART/generic_char_v0.2/png/red" />
      <Folder Include="Assets/TileMap/TreeBGTile" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Run" />
+     <Folder Include="Assets/Scripts/Entity/Enemy" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Hit-Vanish" />
      <Folder Include="Assets/ART" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Background" />
@@ -74,6 +79,7 @@
      <Folder Include="Assets/Prefab/Moster" />
      <Folder Include="Assets/TileMap/TileData" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/HUD" />
+     <Folder Include="Assets/Scripts/Entity" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly" />
      <Folder Include="Assets/Prefab/Player" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Trees" />
