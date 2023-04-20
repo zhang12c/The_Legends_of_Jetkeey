@@ -52,6 +52,7 @@
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee" />
      <Folder Include="Assets/Scripts/Player" />
      <Folder Include="Assets/ART/generic_char_v0.2" />
+     <Folder Include="Assets/Prefab" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Snail" />
      <Folder Include="Assets/Scenes" />
      <Folder Include="Assets/TileMap/RuleTilePalette" />
@@ -59,6 +60,7 @@
      <Folder Include="Assets/ART/generic_char_v0.2/png/purple" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Hit" />
+     <Folder Include="Assets/Animation/Player" />
      <Folder Include="Assets/TileMap" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/blue" />
      <Folder Include="Assets/Animation" />
@@ -69,9 +71,11 @@
      <Folder Include="Assets/ART" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Background" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Attack" />
+     <Folder Include="Assets/Prefab/Moster" />
      <Folder Include="Assets/TileMap/TileData" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/HUD" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly" />
+     <Folder Include="Assets/Prefab/Player" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Trees" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Walk" />

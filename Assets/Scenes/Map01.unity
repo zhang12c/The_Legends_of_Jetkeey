@@ -7603,7 +7603,7 @@ GameObject:
   - component: {fileID: 584426909}
   - component: {fileID: 584426913}
   - component: {fileID: 584426912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collison
   m_TagString: Untagged
   m_Icon: {fileID: 0}
