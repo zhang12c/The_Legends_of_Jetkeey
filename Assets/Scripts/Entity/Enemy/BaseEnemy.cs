@@ -97,9 +97,14 @@ namespace Entity.Enemy
 
         public void OnDeath()
         {
-            Animator.SetBool(Dead,true);
+            Animator.SetTrigger(Dead);
         }
-        
+
+        public void DestroyMyself()
+        {
+            Destroy(gameObject);
+        }
+
         private void UpdateFollowCd()
         {
             if (_canFollow)
