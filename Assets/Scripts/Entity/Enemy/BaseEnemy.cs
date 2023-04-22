@@ -2,6 +2,7 @@ using System;
 using UnitTool;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 namespace Entity.Enemy
 {
     public class BaseEnemy : MonoBehaviour
@@ -98,6 +99,7 @@ namespace Entity.Enemy
         public void OnDeath()
         {
             Animator.SetTrigger(Dead);
+            //DestroyMyself();
         }
 
         public void DestroyMyself()
@@ -113,6 +115,7 @@ namespace Entity.Enemy
                 _currentFollowTimeCounter = followTime;
             }
         }
+        
         
     }
 }

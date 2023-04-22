@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Entity.Player;
 using UnityEngine;
+using UnityEngine.UI;
 namespace Player
 {
     public class PlayerController : MonoBehaviour
@@ -41,6 +42,7 @@ namespace Player
         private bool _canAttack;
         public float attackCd;
         private float _currentCdCounter;
+        public Image skillPic;
 
         private void Awake()
         {
@@ -65,6 +67,7 @@ namespace Player
             
             if (!_canAttack)
             {
+                skillPic.fillAmount = attackCd - _currentCdCounter;
                 _currentCdCounter -= Time.deltaTime;
                 if (_currentCdCounter <= 0)
                 {
@@ -127,7 +130,7 @@ namespace Player
             Fclip();
 
         }
-        
+
         private void UpdateAttackCd()
         {
             if (_canAttack)
@@ -190,7 +193,16 @@ namespace Player
         
         public void PlayAttack()
         {
-            _animator.SetTrigger(Atk);
+            if (_canAttack)
+            {
+                _animator.SetTrigger(Atk);
+                UpdateAttackCd();
+            }
+            else
+            {
+                Debug.Log("冷却ing");
+            }
+            
         }
     }
 }

@@ -7,8 +7,6 @@ namespace Entity.Enemy
     {
         private static readonly int Walk = Animator.StringToHash("walk");
         private static readonly int Run = Animator.StringToHash("run");
-        
-        
 
         protected override void Movement()
         {

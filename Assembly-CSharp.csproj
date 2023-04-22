@@ -41,18 +41,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/Scene/UIManager.cs" />
      <Compile Include="Assets/Scripts/UnitTool/PhysicsCheckLayer.cs" />
      <Compile Include="Assets/Scripts/Entity/Character.cs" />
      <Compile Include="Assets/Scripts/Entity/Enemy/BaseEnemy.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/Attack.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/PlayerController.cs" />
      <Compile Include="Assets/Scripts/Entity/Enemy/Pig.cs" />
+     <Compile Include="Assets/Scripts/Entity/Enemy/EnemyManager.cs" />
      <Folder Include="Assets" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/TileMap/TileData/TreeBG" />
      <Folder Include="Assets/ART/generic_char_v0.2/png" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
+     <Folder Include="Assets/TextMesh Pro/Sprites" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/TileMap/Map1Tile" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Idle" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <Folder Include="Assets/TileMap/TileData/MapTileclip" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee" />
      <Folder Include="Assets/Scripts/Entity/Player" />
@@ -62,12 +69,18 @@
      <Folder Include="Assets/Scenes" />
      <Folder Include="Assets/TileMap/RuleTilePalette" />
      <Folder Include="Assets/Scripts" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/purple" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Hit" />
      <Folder Include="Assets/Animation/Player" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
+     <Folder Include="Assets/TextMesh Pro/Resources" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets/TileMap" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/blue" />
+     <Folder Include="Assets/TextMesh Pro" />
      <Folder Include="Assets/Animation" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/red" />
      <Folder Include="Assets/TileMap/TreeBGTile" />
@@ -78,20 +91,42 @@
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Background" />
      <Folder Include="Assets/Animation/Enemy" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Attack" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets/Prefab/Moster" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
      <Folder Include="Assets/TileMap/TileData" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+     <Folder Include="Assets/Font" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/HUD" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+     <Folder Include="Assets/TextMesh Pro/Shaders" />
      <Folder Include="Assets/Scripts/Entity" />
+     <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
+     <Folder Include="Assets/TextMesh Pro/Fonts" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly" />
      <Folder Include="Assets/Prefab/Player" />
+     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <Folder Include="Assets/Scripts/Scene" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Trees" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets/Scripts/UnitTool" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Mob/Boar/Walk" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Assets/TileMap/RuleTile" />
+     <Folder Include="Assets/TextMesh Pro/Documentation" />
      <Folder Include="Assets/ART/generic_char_v0.2/png/green" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <Folder Include="Assets/ART/Legacy-Fantasy - High Forest 2.3/Assets" />
+     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
      <Folder Include="Assets/Animator" />
+     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.20f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
@@ -746,8 +781,14 @@
      <Reference Include="Unity.2D.Tilemap.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEditor.CacheServer">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+     </Reference>
      <Reference Include="PsdPlugin">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -782,11 +823,8 @@
      <Reference Include="Unity.2D.Path.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     <Reference Include="Unity.ResourceManager">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -797,14 +835,17 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     <Reference Include="Unity.2D.Psdimporter.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Extras.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
@@ -827,6 +868,9 @@
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.Animation.Runtime">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
      </Reference>
@@ -842,8 +886,17 @@
      <Reference Include="Unity.2D.Common.Runtime">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.2D.SpriteShape.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
@@ -853,24 +906,6 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Addressables">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Addressables.Editor">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.CacheServer">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ResourceManager">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ScriptableBuildPipeline">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

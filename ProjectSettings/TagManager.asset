@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - CMBound
+  - Moster
+  - UIManager
   layers:
   - Default
   - TransparentFX
