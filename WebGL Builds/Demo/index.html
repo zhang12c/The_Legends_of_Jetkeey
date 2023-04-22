@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Demo.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Demo.data.br",
-        frameworkUrl: buildUrl + "/Demo.framework.js.br",
-        codeUrl: buildUrl + "/Demo.wasm.br",
+        dataUrl: buildUrl + "/Demo.data.gz",
+        frameworkUrl: buildUrl + "/Demo.framework.js.gz",
+        codeUrl: buildUrl + "/Demo.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "The Legends of Jetkeey",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";

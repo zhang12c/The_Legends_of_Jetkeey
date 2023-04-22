@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 namespace Scene
@@ -12,6 +13,7 @@ namespace Scene
         public Transform gameStartPanel;
         public Camera uiCamera;
         public string mainSceneName;
+        public EventSystem EventSystem;
         private Coroutine _loadSceneEnumerator;
         
 
@@ -23,6 +25,7 @@ namespace Scene
         {
             gameStartPanel.gameObject.SetActive(false);
             uiCamera.gameObject.SetActive(false);
+            EventSystem.gameObject.SetActive(false);
             if (_loadSceneEnumerator!= null)
             {
                 StopCoroutine(_loadSceneEnumerator);
