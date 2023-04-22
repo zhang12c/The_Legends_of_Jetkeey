@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/WebGL Builds/Demo;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/WebGL Builds/Demo;/Users/beile/Desktop/Demo;/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Build/Demo;;;;;;;\"}"
             }
         ]
     }
