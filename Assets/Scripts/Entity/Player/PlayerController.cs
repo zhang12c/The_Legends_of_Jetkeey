@@ -204,6 +204,11 @@ namespace Player
         {
             _animator.SetTrigger(Hurt);
         }
+
+        public void PlayJump()
+        {
+            Jump();
+        }
         
         public void PlayAttack()
         {

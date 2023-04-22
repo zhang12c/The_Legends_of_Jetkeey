@@ -46,14 +46,14 @@ namespace Entity
         {
             if (!_canBeAttack)
             {
-                Debug.Log("无敌保护中，无法被攻击！");
+                //Debug.Log("无敌保护中，无法被攻击！");
                 return;
             }
             // 这里是扣血
             if (currentHealth - attacker.damage > 0)
             {
                 currentHealth -= attacker.damage;
-                Debug.Log("执行受伤-" + attacker.damage);
+                //Debug.Log("执行受伤-" + attacker.damage);
                 //执行受伤
                 OnTakeDamage?.Invoke(attacker.transform.parent);
                 TriggerInvulnerable();
