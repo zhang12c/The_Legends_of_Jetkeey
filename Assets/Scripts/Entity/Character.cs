@@ -14,7 +14,6 @@ namespace Entity
 
         public UnityEvent<Transform> OnTakeDamage;
         public UnityEvent OnDie;
-        public UnityEvent OnGameEnd;
 
 
         [Header("受伤无敌")]
@@ -64,19 +63,6 @@ namespace Entity
                 currentHealth = 0;
                 //触发死亡
                 OnDie?.Invoke();
-                
-                var masters = GameObject.FindGameObjectsWithTag("Moster");
-                if (masters.Length <= 0)
-                {
-                    // 场景没有怪了
-                    OnGameEnd?.Invoke();
-
-                    UIManager uiManager = GameObject.FindWithTag("UIManager").GetComponent<UIManager>();
-                    if (uiManager != null)
-                    {
-                        uiManager.DoGameEnd();
-                    }
-                }
             }
             
         }

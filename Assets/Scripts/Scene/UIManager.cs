@@ -7,11 +7,13 @@ namespace Scene
 {
     public class UIManager : MonoBehaviour
     {
+        [Header("游戏开始")]
         public Button gameStart;
         public Transform gameStartPanel;
         public Camera uiCamera;
         public string mainSceneName;
         private Coroutine _loadSceneEnumerator;
+        
 
         private void Start()
         {
@@ -59,11 +61,6 @@ namespace Scene
         private IEnumerator UnloadScene()
         {
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        public void DoGameEnd()
-        {
-            Debug.Log("游戏结束");
         }
     }
 }

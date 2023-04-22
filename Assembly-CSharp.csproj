@@ -45,10 +45,11 @@
      <Compile Include="Assets/Scripts/UnitTool/PhysicsCheckLayer.cs" />
      <Compile Include="Assets/Scripts/Entity/Character.cs" />
      <Compile Include="Assets/Scripts/Entity/Enemy/BaseEnemy.cs" />
+     <Compile Include="Assets/Scripts/Entity/Enemy/EnemyManager.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/Attack.cs" />
      <Compile Include="Assets/Scripts/Entity/Player/PlayerController.cs" />
+     <Compile Include="Assets/Scripts/Scene/GameEnd.cs" />
      <Compile Include="Assets/Scripts/Entity/Enemy/Pig.cs" />
-     <Compile Include="Assets/Scripts/Entity/Enemy/EnemyManager.cs" />
      <Folder Include="Assets" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <Folder Include="Assets/TileMap/TileData/TreeBG" />
@@ -787,14 +788,14 @@
      <Reference Include="PsdPlugin">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Addressables">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -835,8 +836,8 @@
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+     <Reference Include="Unity.Play.Publisher.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -850,11 +851,17 @@
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.EditorCoroutines.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Runtime">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
      </Reference>
      <Reference Include="Cinemachine">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
@@ -868,8 +875,8 @@
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     <Reference Include="Unity.2D.Psdimporter.Editor">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Animation.Runtime">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
@@ -879,6 +886,9 @@
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>/Users/beile/Documents/RiderProjects/The Legends of Jetkeey/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>

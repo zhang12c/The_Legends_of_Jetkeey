@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Entity.Player;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 namespace Player
 {
@@ -43,6 +44,9 @@ namespace Player
         public float attackCd;
         private float _currentCdCounter;
         public Image skillPic;
+        
+        [Header("怪物剩余的判断")]
+        public UnityEvent OnGameEnd;
 
         private void Awake()
         {
@@ -75,6 +79,15 @@ namespace Player
                 }
             }
         }
+
+        private void LateUpdate()
+        {
+            var masters = GameObject.FindGameObjectsWithTag("Moster");
+            if (masters.Length <= 0)
+            {
+                OnGameEnd?.Invoke();
+            }
+        }
         private void CheckIfCanJump()
         {
             if (_isGround )
@@ -98,9 +111,10 @@ namespace Player
 
         private void PlayerInput()
         {
+            //#if UNITY_EDITOR || UNITY_WEBGL || UNITY_64
             _inputX = Input.GetAxis("Horizontal");
             _inputY = Input.GetAxis("Vertical");
-            
+            //#endif
             // 按下shift 的时候跑步
             if (!Input.GetKey(KeyCode.LeftShift))
                 _inputX *= 0.5f;

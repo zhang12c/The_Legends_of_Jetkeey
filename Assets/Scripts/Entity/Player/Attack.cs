@@ -9,7 +9,10 @@ namespace Entity.Player
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            other.GetComponent<Character>()?.TakeDamage(this);
+            if (other.gameObject.layer != gameObject.layer)
+            {
+                other.GetComponent<Character>()?.TakeDamage(this);
+            }
         }
     }
 }
